@@ -59,6 +59,15 @@
   color: var(--colorRojoOscuro);
 }
 
+.botonPc {
+  border-radius: 10px;
+  background-color: var(--colorRojoOscuro);
+}
+
+.botonPc:hover {
+  color: var(--fontsColor);
+}
+
 @media (min-width: 768px) and (max-width: 992px) {
   .navbarRolling {
     padding: 15px 25px;
