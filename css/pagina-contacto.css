@@ -11,6 +11,19 @@
   background-color: #5c0000;
 }
 
+/* CARDS */
+.card-contacto {
+    background-color: #f5f3e9;
+}
+
+.card-formulario {
+    background-color: #f5f3e9;
+}
+
+.card-ubicacion {
+    background-color: #f5f3e9;
+}
+
 /* REDES SOCIALES */
 .redes-sociales {
     display: flex;
@@ -32,8 +45,10 @@
 }
 /* Títulos */
 .card-contacto h1,
-.card-contacto h2,
 .card-formulario h2,
 .card-ubicacion h2 {
+    color: #af2525;
+}
+.card-contacto h2{
     color: #ff0000;
 }
