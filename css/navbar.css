@@ -1,3 +1,6 @@
+body {
+  background-color: var(--fontsColor);
+}
 .navbarRolling {
   background-color: var(--backgroundColor);
   padding: 10px 25px;
@@ -118,6 +121,37 @@
   }
   .iconosRolling {
     font-size: 32px;
+  }
+
+  .menuContenedor {
+    border-radius: 30px;
+    background-color: var(--backgroundColor);
+    display: block;
+    position: fixed;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    z-index: 1;
+  }
+
+  .menuItems {
+    padding: 20px 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .menuLogos {
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+
+  .menuLogos:hover {
+    transform: scale(1.1);
   }
 }
 @media (max-width: 768px) {
