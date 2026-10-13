@@ -13,7 +13,7 @@ body {
 }
 .buscadorRolling {
   width: 50%;
-  margin-left: 300px;
+  margin-left: auto;
 }
 .buscadorRolling input {
   width: 100%;
