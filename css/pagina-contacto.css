@@ -1,0 +1,12 @@
+
+
+/* BOTON ENVIAR */
+.btn-enviar {
+  background-color: #ff0000;
+  color: white;
+  border: none;
+}
+
+.btn-enviar:hover {
+  background-color: #5c0000;
+}
