@@ -100,3 +100,20 @@
   animation-play-state: paused;
   cursor: pointer;
 }
+
+.marquesina img {
+  height: 100px;
+  margin: 0 20px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+@keyframes desplazar {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
