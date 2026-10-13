@@ -89,3 +89,14 @@
   padding: 6px 0;
   box-sizing: border-box;
 }
+
+.marquesina {
+  display: flex;
+  width: max-content;
+  animation: desplazar 20s linear infinite;
+}
+
+.marquesina:hover {
+  animation-play-state: paused;
+  cursor: pointer;
+}
