@@ -80,3 +80,40 @@
     height: 30px;
   }
 }
+
+.marquesinaContenedor {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: var(--fontsColor);
+  padding: 6px 0;
+  box-sizing: border-box;
+}
+
+.marquesina {
+  display: flex;
+  width: max-content;
+  animation: desplazar 20s linear infinite;
+}
+
+.marquesina:hover {
+  animation-play-state: paused;
+  cursor: pointer;
+}
+
+.marquesina img {
+  height: 100px;
+  margin: 0 20px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+@keyframes desplazar {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
