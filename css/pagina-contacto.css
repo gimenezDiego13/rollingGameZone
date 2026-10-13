@@ -10,3 +10,30 @@
 .btn-enviar:hover {
   background-color: #5c0000;
 }
+
+/* REDES SOCIALES */
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.redes-sociales a {
+    color: #ff0000;
+    font-size: 2.5rem;
+    text-decoration: none;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.redes-sociales a:hover {
+    color: #5c0000;
+    transform: scale(1.15);
+}
+/* Títulos */
+.card-contacto h1,
+.card-contacto h2,
+.card-formulario h2,
+.card-ubicacion h2 {
+    color: #ff0000;
+}
