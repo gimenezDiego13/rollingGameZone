@@ -2,6 +2,9 @@
 
 @import "../css/general.css";
 @import "../css/variables.css";
+@import "../css/formulario.css";
+@import "../css/login.css";
 @import "../css/navbar.css";
 @import "../css/inicio.css";
-@import "../css/detalleContenedor.css";
+@import"../css/carrito.css";
+@import "../css/footer.css";

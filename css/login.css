@@ -1,0 +1,173 @@
+/* ===== ESTILOS GENERALES: MOBILE FIRST ===== */
+
+.paginaLogin {
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5c0000;
+  color: #fff;
+  font-family: var(--tipografiaGeneral);
+}
+
+.paginaLogin .contenedordest {
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+  background: linear-gradient(135deg, #800000, #bb0000, #ff0000);
+  border: 2px solid rgba(255, 0, 0, 0.7);
+  border-radius: 18px;
+  box-shadow:
+    0 0 25px rgba(255, 0, 0, 0.45),
+    0 15px 40px rgba(0, 0, 0, 0.6);
+}
+
+.paginaLogin .container,
+.paginaLogin .imagen-section {
+  width: 100%;
+  min-width: 0;
+}
+
+.paginaLogin .form-box {
+  position: relative;
+  width: 100%;
+  padding: 24px;
+  background: #800000;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.paginaLogin h1 {
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 25px;
+  letter-spacing: 2px;
+  text-shadow: 0 0 12px rgba(255, 255, 255, 0.15);
+}
+
+.paginaLogin h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.paginaLogin .campo {
+  margin-bottom: 15px;
+}
+
+.paginaLogin label {
+  display: block;
+  margin-bottom: 7px;
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+.paginaLogin input {
+  display: block;
+  width: 100%;
+  padding: 13px 16px;
+  color: #000;
+  background: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+  outline: none;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
+}
+
+.paginaLogin input:focus {
+  border-color: #ff5555;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.35);
+}
+
+.paginaLogin button {
+  cursor: pointer;
+  font-weight: 700;
+  transition:
+    background 0.3s,
+    transform 0.3s,
+    box-shadow 0.3s;
+}
+
+.paginaLogin .btn-ingresar {
+  width: 100%;
+  margin-top: 15px;
+  padding: 14px;
+  color: #fff;
+  background: #000;
+  border: none;
+  border-radius: 12px;
+  letter-spacing: 1px;
+  box-shadow: 0 0 18px rgba(255, 255, 255, 0.09);
+}
+
+.paginaLogin .btn-ingresar:hover {
+  background: #222;
+  transform: scale(1.01);
+}
+
+/* ===== IMAGEN ===== */
+
+.paginaLogin .imagen-section {
+  display: none;
+}
+
+.paginaLogin .imagen-box {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border: 2px solid #fff;
+  border-radius: 24px;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.3);
+}
+
+.paginaLogin .imagen-box img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.paginaLogin .imagen-glow {
+  position: absolute;
+  inset: 0;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 22px;
+  box-shadow: inset 0 0 30px rgba(255, 255, 255, 0.2);
+  pointer-events: none;
+}
+
+/* ===== TABLETS Y ESCRITORIO ===== */
+
+@media (min-width: 850px) {
+  .paginaLogin {
+    padding: 40px 20px;
+  }
+
+  .paginaLogin .contenedordest {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 35px;
+    padding: 30px;
+  }
+
+  .paginaLogin .form-box {
+    padding: 30px;
+  }
+
+  .paginaLogin .imagen-section {
+    display: block;
+  }
+
+  .paginaLogin h1 {
+    font-size: 28px;
+    letter-spacing: 3px;
+  }
+}
