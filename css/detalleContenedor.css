@@ -1,0 +1,384 @@
+.contenedorMaestro {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  background-color: var(--backgroundColor);
+}
+
+.contenedorDeDetalle {
+  width: 100%;
+  max-width: 1200px;
+  min-height: 600px;
+  height: auto;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 40px;
+  border: 4px solid #aaa;
+  border-radius: 20px;
+  margin: 50px auto;
+  transition: all 1s ease;
+}
+
+.contenedorDeDetalle:hover {
+  border: 4px solid var(--colorBordoMásClaro);
+}
+
+.galeriaImgProducto,
+.detalleContenedor,
+.detalleContenedor2 {
+  min-width: 0;
+}
+
+.galeriaImgProducto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex: 1;
+}
+
+.contenedorMiniImg {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.miniImgProductoDetallado {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  margin: 10px auto;
+}
+
+.miniImgProductoDetallado:hover {
+  transform: scale(1.3);
+}
+
+.detalleContenedor {
+  flex: 1;
+  min-width: 0;
+  max-width: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.productoDetalladoImg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  max-height: 450px;
+  object-fit: contain;
+  border-radius: 10px;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.productoDetalladoImg:hover {
+  transform: scale(1.2);
+}
+
+.detalleContenedor2 {
+  width: 100%;
+  max-width: 450px;
+  min-width: 0;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 22px;
+  flex-shrink: 1;
+}
+
+.titulo {
+  margin: 0;
+  color: var(--fontsColor);
+  font-size: 32px;
+  text-align: left;
+}
+
+.btnMasVendido {
+  margin: 0;
+  padding: 12px 18px;
+  color: var(--fontsColor);
+  background-color: var(--colorBordoMásClaro);
+  border: 1px solid var(--colorRojoVivo);
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.informacionProducto {
+  margin: 0;
+  color: var(--fontsColor);
+  font-size: 18px;
+  line-height: 1.7;
+  text-align: left;
+}
+
+.precio {
+  margin: 0;
+  padding: 16px 24px;
+  color: var(--fontsColor);
+  background-color: var(--colorBordoMásClaro);
+  border-radius: 12px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.contenedorEstrellas {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.estrellas {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.imgEstrellas {
+  display: block;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.valoracion {
+  margin: 0;
+  color: var(--fontsColor);
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.botonesDetallados {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 15px;
+  margin-top: 5px;
+}
+
+.btn1,
+.btn2 {
+  width: 100%;
+  padding: 17px 20px;
+  color: var(--fontsColor);
+  background-color: var(--colorBordoMásClaro);
+  border: 1px solid var(--colorRojoVivo);
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.btn1 {
+  background-color: var(--colorRojoOscuro);
+}
+
+.btn1:hover,
+.btn2:hover {
+  background-color: var(--colorRojoVivo);
+  transform: translateY(-2px);
+}
+
+.btn1:focus-visible,
+.btn2:focus-visible,
+.miniImgProductoDetallado:focus-visible {
+  outline: 2px solid var(--fontsColor);
+  outline-offset: 3px;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .contenedorMaestro {
+    padding: 0 25px;
+  }
+
+  .contenedorDeDetalle {
+    flex-direction: column;
+    gap: 30px;
+    padding: 25px;
+    margin: 30px auto;
+  }
+
+  .galeriaImgProducto {
+    width: 100%;
+    flex: none;
+    gap: 25px;
+  }
+
+  .contenedorMiniImg {
+    gap: 12px;
+  }
+
+  .miniImgProductoDetallado {
+    width: 90px;
+    height: 90px;
+  }
+
+  .detalleContenedor {
+    max-width: 520px;
+  }
+
+  .productoDetalladoImg {
+    width: 100%;
+    max-height: 450px;
+  }
+
+  .productoDetalladoImg:hover {
+    transform: none;
+  }
+
+  .detalleContenedor2 {
+    max-width: 100%;
+    padding: 10px 20px;
+    gap: 18px;
+  }
+
+  .titulo {
+    font-size: 28px;
+  }
+
+  .informacionProducto {
+    font-size: 17px;
+  }
+
+  .precio {
+    font-size: 28px;
+  }
+
+  .imgEstrellas {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contenedorMaestro {
+    padding: 0 12px;
+  }
+
+  .contenedorDeDetalle {
+    flex-direction: column;
+    width: 100%;
+    min-height: auto;
+    gap: 20px;
+    padding: 15px;
+    margin: 20px auto;
+    border-width: 2px;
+    border-radius: 15px;
+  }
+
+  .galeriaImgProducto {
+    flex-direction: column;
+    width: 100%;
+    flex: none;
+    gap: 15px;
+  }
+
+  .detalleContenedor {
+    order: 1;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .productoDetalladoImg {
+    width: 100%;
+    max-height: 350px;
+    object-fit: contain;
+  }
+
+  .contenedorMiniImg {
+    order: 2;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .miniImgProductoDetallado {
+    width: 75px;
+    height: 75px;
+    margin: 0;
+  }
+
+  .miniImgProductoDetallado:hover {
+    transform: scale(1.05);
+  }
+
+  .productoDetalladoImg:hover {
+    transform: none;
+  }
+
+  .detalleContenedor2 {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px 5px;
+    gap: 16px;
+    align-items: stretch;
+  }
+
+  .titulo {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .btnMasVendido {
+    align-self: center;
+    padding: 10px 14px;
+    font-size: 12px;
+  }
+
+  .informacionProducto {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .contenedorEstrellas {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .imgEstrellas {
+    width: 28px;
+    height: 28px;
+  }
+
+  .valoracion {
+    font-size: 15px;
+  }
+
+  .precio {
+    align-self: center;
+    padding: 12px 18px;
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .botonesDetallados {
+    width: 100%;
+    gap: 12px;
+  }
+
+  .btn1,
+  .btn2 {
+    width: 100%;
+    padding: 15px;
+    font-size: 14px;
+  }
+}

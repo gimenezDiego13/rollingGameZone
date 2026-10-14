@@ -1,0 +1,12 @@
+.error-contenido {
+    max-width: 600px;
+    width: 100%;
+}
+
+.error404 {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin: 0 auto;
+}
