@@ -43,6 +43,7 @@ La idea principal del proyecto es ofrecer una tienda online para la venta de har
 - Ramiro Calderón
   - Página de contacto
   - Página principal
+  - Página error404
 
 - Nazareno Albornoz
   - Acerca de Nosotros
@@ -64,14 +65,7 @@ La idea principal del proyecto es ofrecer una tienda online para la venta de har
 
 ## Stack tecnológico
 
-El proyecto fue desarrollado con una estructura de frontend estático, utilizando Bootstrap como base para el diseño responsive y componentes reutilizables. También se incorporaron librerías iconográficas y recursos visuales para mejorar la experiencia de usuario.
-
-## Estructura del proyecto
-
-
-
-## Logo
-
+El proyecto fue desarrollado con una estructura de frontend estático, utilizando Bootstrap 5.3 y 6.0 como base para el diseño responsive y componentes reutilizables. También se incorporaron librerías iconográficas y recursos visuales para mejorar la experiencia de usuario.
 
 
 ## Objetivo del proyecto
@@ -82,7 +76,7 @@ Crear una tienda online funcional y visualmente atractiva para la venta de hardw
 
 1. Clonar el repositorio desde GitHub.
 2. Abrir la carpeta del proyecto en tu editor preferido.
-3. Ejecutar el archivo `pagina-contacto.html` o utilizar un servidor local para visualizar la web.
+3. Ejecutar el archivo `index.html` o utilizar un servidor local para visualizar la web.
 
 También puedes abrirlo directamente en el navegador o usar herramientas como Live Server para una vista más cómoda.
 
