@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito Rolling Game Zone</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbarRolling">
+        <div class="container-fluid">
+          <img
+            src="./assets/rollinGameZoneLogo.png"
+            alt="Logo de Rolling Game Zone"
+            class="logoRolling"
+          />
+          <form role="search" class="buscadorRolling">
+            <input
+              type="search"
+              class="form-control"
+              placeholder="¿Qué estás buscando?"
+            />
+          </form>
+
+          <button
+            class="btn-icon navbar-toggler"
+            type="button"
+            data-bs-toggle="drawer"
+            data-bs-target="#navbarNavMenu"
+            aria-controls="navbarNavMenu"
+            aria-expanded="false"
+            aria-label="Abrir menú de navegación"
+          >
+            <span class="navbar-toggler-icon" aria-hidden="true"></span>
+          </button>
+
+          <dialog
+            class="drawer drawer-end"
+            id="navbarNavMenu"
+            aria-labelledby="navbarNavMenuLabel"
+          >
+            <div class="drawer-header">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="drawer"
+                aria-label="Cerrar"
+              ></button>
+            </div>
+
+            <div class="drawer-body">
+              <ul class="navbar-nav align-items-center">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">CATEGORÍAS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">PC ARMADAS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">PERIFÉRICOS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">INICIO</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">LOGIN</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link botonPc" href="#">ARMA TU PC</a>
+                </li>
+              </ul>
+
+              <div class="iconosContainer">
+                <a href="#" aria-label="Carrito de compras">
+                  <i class="fa-solid fa-cart-shopping iconosRolling"></i>
+                </a>
+                <a href="#" aria-label="Mi cuenta">
+                  <i class="fa-regular fa-user iconosRolling"></i>
+                </a>
+              </div>
+            </div>
+          </dialog>
+        </div>
+      </nav>
+</header>
+<main></main>
+<footer></footer>
+    
+</body>
+
+<script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+rossorigin="anonymous"></script>
+
+</html>
