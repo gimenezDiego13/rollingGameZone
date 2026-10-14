@@ -1,0 +1,237 @@
+body {
+  background-color: var(--fontsColor);
+}
+.navbarRolling {
+  background-color: var(--backgroundColor);
+  padding: 10px 25px;
+  display: flex;
+}
+.logoRolling {
+  width: 150px;
+  height: auto;
+  object-fit: contain;
+}
+.buscadorRolling {
+  width: 50%;
+  margin-left: auto;
+}
+.buscadorRolling input {
+  width: 100%;
+  border-radius: 20px;
+  padding: 10px 18px;
+  outline: none;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+.buscadorRolling input:focus {
+  border-color: var(--colorRojoOscuro);
+  box-shadow: 0 0 0 0.2rem var(--colorRojoOscuro);
+}
+.navbarRolling .navbar-toggler {
+  border: 1px solid var(--colorRojoOscuro);
+  padding: 8px 10px;
+  margin-left: auto;
+}
+.navbarRolling .navbar-toggler:focus {
+  box-shadow: 0 0 0 0.2rem var(--colorRojoOscuro);
+}
+.navbarRolling .navbar-toggler-icon {
+  filter: none;
+}
+
+.navbarRolling .drawer {
+  box-sizing: border-box;
+  width: 20%;
+  padding: 20px;
+  background-color: var(--backgroundColor);
+  color: var(--fontsColor);
+}
+.navbarRolling .drawer {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbarRolling .drawer-header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.navbarRolling .nav-link {
+  color: var(--fontsColor);
+  font-weight: bolder;
+  padding: 10px 15px;
+  text-align: center;
+  transition: all 1s ease;
+}
+.navbarRolling .nav-link:hover {
+  background-color: var(--colorRojoVivo);
+  color: var(--fontsColor);
+  transform: scale(1.04);
+}
+
+.botonPc {
+  border-radius: 10px;
+  background-color: var(--colorRojoVivo);
+}
+
+.iconosContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 25px;
+}
+
+.iconosRolling {
+  color: var(--fontsColor);
+  font-size: 30px;
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
+}
+.iconosRolling:hover {
+  transform: scale(1.1);
+  color: var(--colorRojoOscuro);
+}
+
+.menuContenedor {
+  display: none;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .navbarRolling {
+    padding: 15px 25px;
+  }
+  .logoRolling {
+    width: 140px;
+  }
+  .buscadorRolling {
+    width: 70%;
+    margin-left: 25px;
+  }
+  .navbarRolling .drawer {
+    width: 40%;
+  }
+  .navbarRolling .nav-link {
+    font-size: 19px;
+    padding: 11px 18px;
+  }
+  .iconosRolling {
+    font-size: 32px;
+  }
+
+  .menuContenedor {
+    border-radius: 30px;
+    background-color: var(--backgroundColor);
+    display: block;
+    position: fixed;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    z-index: 1;
+  }
+
+  .menuItems {
+    padding: 20px 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .menuLogos {
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+
+  .menuLogos:hover {
+    transform: scale(1.1);
+  }
+}
+@media (max-width: 768px) {
+  .navbarRolling {
+    padding: 10px 15px;
+  }
+  .logoRolling {
+    width: 120px;
+  }
+  .navbarRolling .container-fluid {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .navbarRolling .navbar-toggler {
+    margin-left: auto;
+  }
+  .buscadorRolling {
+    width: 100%;
+    margin: 5px 0 0;
+    order: 3;
+  }
+  .buscadorRolling input {
+    width: 100%;
+    padding: 12px 18px;
+    font-size: 16px;
+    text-align: center;
+  }
+  .buscadorRolling input::placeholder {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .navbarRolling .drawer {
+    width: 50%;
+    padding: 18px;
+  }
+  .navbarRolling .nav-link {
+    padding: 9px 15px;
+    font-size: 15px;
+    text-align: center;
+    align-items: center;
+  }
+  .iconosContainer {
+    gap: 30px;
+    margin-top: 20px;
+  }
+  .iconosRolling {
+    font-size: 28px;
+  }
+
+  .menuContenedor {
+    border-radius: 30px;
+    background-color: var(--backgroundColor);
+    display: block;
+    position: fixed;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    z-index: 1;
+  }
+
+  .menuItems {
+    padding: 15px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .menuLogos {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+
+  .menuLogos:hover {
+    transform: scale(1.1);
+  }
+}

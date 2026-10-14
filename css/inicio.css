@@ -1,0 +1,148 @@
+.carousel-overlay-controls .carousel-indicators button {
+  background-color: var(--colorBordoMásClaro);
+  opacity: 0.6;
+  border: 1px solid var(--colorRojoVivo);
+}
+.carousel-overlay-controls .carousel-indicators button.active {
+  background-color: var(--colorRojoVivo);
+  opacity: 1;
+}
+
+#carouselExampleDark .carousel-item {
+  width: 100%;
+}
+
+#carouselExampleDark .carousel-item img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-overlay-controls {
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.carousel-overlay-controls > button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border: 1px solid var(--colorBordoMásClaro);
+  border-radius: 50%;
+  background-color: var(--backgroundColor);
+  color: var(--colorRojoVivo);
+  opacity: 0.9;
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.carousel-overlay-controls > button:hover {
+  background-color: var(--colorBordoMásClaro);
+  border-color: var(--colorRojoVivo);
+}
+
+.marquesinaContenedor {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: var(--fontsColor);
+  padding: 6px 0;
+  box-sizing: border-box;
+}
+
+.marquesina {
+  display: flex;
+  width: max-content;
+  animation: desplazar 20s linear infinite;
+}
+
+.marquesina:hover {
+  animation-play-state: paused;
+  cursor: pointer;
+}
+
+.marquesina img {
+  height: 100px;
+  margin: 0 20px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+@keyframes desplazar {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  #carouselExampleDark .carousel-item img {
+    height: auto;
+  }
+
+  .carousel-overlay-controls {
+    bottom: 10px;
+    padding: 0 15px;
+  }
+
+  .carousel-overlay-controls > button {
+    width: 36px;
+    height: 36px;
+  }
+
+  .marquesinaContenedor {
+    padding: 8px 0;
+  }
+
+  .marquesina {
+    animation-duration: 22s;
+  }
+
+  .marquesina img {
+    height: 75px;
+    width: 110px;
+    margin: 0 15px;
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 576px) {
+  #carouselExampleDark .carousel-item img {
+    height: auto;
+  }
+
+  .carousel-overlay-controls {
+    bottom: 6px;
+    padding: 0 10px;
+  }
+
+  .carousel-overlay-controls > button {
+    width: 30px;
+    height: 30px;
+  }
+  .marquesinaContenedor {
+    padding: 6px 0;
+  }
+
+  .marquesina {
+    animation-duration: 18s;
+  }
+
+  .marquesina img {
+    height: 50px;
+    width: 75px;
+    margin: 0 10px;
+    border-radius: 6px;
+    object-fit: contain;
+  }
+}
