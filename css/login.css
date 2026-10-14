@@ -1,14 +1,6 @@
-
-
 /* ===== ESTILOS GENERALES: MOBILE FIRST ===== */
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
+.paginaLogin {
   min-height: 100vh;
   padding: 20px;
   display: flex;
@@ -16,10 +8,10 @@ body {
   align-items: center;
   background-color: #5c0000;
   color: #fff;
-  font-family:var(--tipografiaGeneral);
+  font-family: var(--tipografiaGeneral);
 }
 
-.contenedordest {
+.paginaLogin .contenedordest {
   width: 100%;
   max-width: 1400px;
   margin: auto;
@@ -35,13 +27,13 @@ body {
     0 15px 40px rgba(0, 0, 0, 0.6);
 }
 
-.container,
-.imagen-section {
+.paginaLogin .container,
+.paginaLogin .imagen-section {
   width: 100%;
   min-width: 0;
 }
 
-.form-box {
+.paginaLogin .form-box {
   position: relative;
   width: 100%;
   padding: 24px;
@@ -50,7 +42,7 @@ body {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
-h1 {
+.paginaLogin h1 {
   margin-bottom: 25px;
   text-align: center;
   font-size: 25px;
@@ -58,24 +50,24 @@ h1 {
   text-shadow: 0 0 12px rgba(255, 255, 255, 0.15);
 }
 
-h2 {
+.paginaLogin h2 {
   margin-bottom: 20px;
   text-align: center;
   font-size: 16px;
 }
 
-.campo {
+.paginaLogin .campo {
   margin-bottom: 15px;
 }
 
-label {
+.paginaLogin label {
   display: block;
   margin-bottom: 7px;
   font-size: 13px;
   opacity: 0.9;
 }
 
-input {
+.paginaLogin input {
   display: block;
   width: 100%;
   padding: 13px 16px;
@@ -85,21 +77,26 @@ input {
   border-radius: 10px;
   outline: none;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-  transition: border-color 0.2s, box-shadow 0.2s;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
 }
 
-input:focus {
+.paginaLogin input:focus {
   border-color: #ff5555;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.35);
 }
 
-button {
+.paginaLogin button {
   cursor: pointer;
   font-weight: 700;
-  transition:background 0.3s, transform 0.3s, box-shadow 0.3s;
+  transition:
+    background 0.3s,
+    transform 0.3s,
+    box-shadow 0.3s;
 }
 
-.btn-ingresar {
+.paginaLogin .btn-ingresar {
   width: 100%;
   margin-top: 15px;
   padding: 14px;
@@ -111,19 +108,18 @@ button {
   box-shadow: 0 0 18px rgba(255, 255, 255, 0.09);
 }
 
-.btn-ingresar:hover {
+.paginaLogin .btn-ingresar:hover {
   background: #222;
   transform: scale(1.01);
 }
 
-
 /* ===== IMAGEN ===== */
 
-.imagen-section {
+.paginaLogin .imagen-section {
   display: none;
 }
 
-.imagen-box {
+.paginaLogin .imagen-box {
   position: relative;
   width: 100%;
   overflow: hidden;
@@ -132,14 +128,14 @@ button {
   box-shadow: 0 0 25px rgba(255, 255, 255, 0.3);
 }
 
-.imagen-box img {
+.paginaLogin .imagen-box img {
   display: block;
   width: 100%;
   height: auto;
   object-fit: contain;
 }
 
-.imagen-glow {
+.paginaLogin .imagen-glow {
   position: absolute;
   inset: 0;
   border: 2px solid rgba(255, 255, 255, 0.5);
@@ -151,32 +147,27 @@ button {
 /* ===== TABLETS Y ESCRITORIO ===== */
 
 @media (min-width: 850px) {
-  body {
+  .paginaLogin {
     padding: 40px 20px;
   }
 
-  .contenedordest {
+  .paginaLogin .contenedordest {
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 35px;
     padding: 30px;
   }
 
-  .form-box {
+  .paginaLogin .form-box {
     padding: 30px;
   }
 
-  .imagen-section {
+  .paginaLogin .imagen-section {
     display: block;
   }
 
-  h1 {
+  .paginaLogin h1 {
     font-size: 28px;
     letter-spacing: 3px;
   }
 }
-
-
-
-
-

@@ -1,13 +1,4 @@
-
-/* ===== ESTILOS GENERALES: MOBILE FIRST ===== */
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
+.paginaFormulario {
   min-height: 100vh;
   padding: 20px;
   display: flex;
@@ -15,10 +6,10 @@ body {
   align-items: center;
   background-color: #5c0000;
   color: #fff;
-  font-family:var(--tipografiaGeneral);
+  font-family: var(--tipografiaGeneral);
 }
 
-.contenedordest {
+.paginaFormulario .contenedordest {
   width: 100%;
   max-width: 1400px;
   margin: auto;
@@ -34,13 +25,13 @@ body {
     0 15px 40px rgba(0, 0, 0, 0.6);
 }
 
-.container,
-.imagen-section {
+.paginaFormulario .container,
+.paginaFormulario .imagen-section {
   width: 100%;
   min-width: 0;
 }
 
-.form-box {
+.paginaFormulario .form-box {
   position: relative;
   width: 100%;
   padding: 24px;
@@ -49,7 +40,7 @@ body {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
-h1 {
+.paginaFormulario h1 {
   margin-bottom: 25px;
   text-align: center;
   font-size: 25px;
@@ -57,24 +48,24 @@ h1 {
   text-shadow: 0 0 12px rgba(255, 255, 255, 0.15);
 }
 
-h2 {
+.paginaFormulario h2 {
   margin-bottom: 20px;
   text-align: center;
   font-size: 16px;
 }
 
-.campo {
+.paginaFormulario .campo {
   margin-bottom: 15px;
 }
 
-label {
+.paginaFormulario label {
   display: block;
   margin-bottom: 7px;
   font-size: 13px;
   opacity: 0.9;
 }
 
-input {
+.paginaFormulario input {
   display: block;
   width: 100%;
   padding: 13px 16px;
@@ -84,21 +75,26 @@ input {
   border-radius: 10px;
   outline: none;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-  transition: border-color 0.2s, box-shadow 0.2s;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
 }
 
-input:focus {
+.paginaFormulario input:focus {
   border-color: #ff5555;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.35);
 }
 
-button {
+.paginaFormulario button {
   cursor: pointer;
   font-weight: 700;
-  transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+  transition:
+    background 0.3s,
+    transform 0.3s,
+    box-shadow 0.3s;
 }
 
-.btn-ingresar {
+.paginaFormulario .btn-ingresar {
   width: 100%;
   margin-top: 15px;
   padding: 14px;
@@ -110,25 +106,25 @@ button {
   box-shadow: 0 0 18px rgba(255, 255, 255, 0.09);
 }
 
-.btn-ingresar:hover {
+.paginaFormulario .btn-ingresar:hover {
   background: #222;
   transform: scale(1.01);
 }
 
 /* ===== INICIO CON REDES SOCIALES ===== */
 
-.social-login {
+.paginaFormulario .social-login {
   margin-top: 25px;
   text-align: center;
 }
 
-.social-login p {
+.paginaFormulario .social-login p {
   margin-bottom: 15px;
   color: #fff;
   font-size: 13px;
 }
 
-.social-login button {
+.paginaFormulario .social-login button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -141,34 +137,34 @@ button {
   letter-spacing: 0;
 }
 
-.btn-google {
+.paginaFormulario .btn-google {
   color: #333;
   background: #fff;
   border: 1px solid #ccc;
 }
 
-.btn-google:hover {
+.paginaFormulario .btn-google:hover {
   background: #f1f1f1;
   transform: scale(1.02);
 }
 
-.btn-google img {
+.paginaFormulario .btn-google img {
   width: 20px;
   height: 20px;
 }
 
-.btn-facebook {
+.paginaFormulario .btn-facebook {
   color: #fff;
   background: #1877f2;
   border: none;
 }
 
-.btn-facebook:hover {
+.paginaFormulario .btn-facebook:hover {
   background: #0d65d9;
   transform: scale(1.02);
 }
 
-.facebook-icon {
+.paginaFormulario .facebook-icon {
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -184,11 +180,11 @@ button {
 
 /* ===== IMAGEN ===== */
 
-.imagen-section {
+.paginaFormulario .imagen-section {
   display: none;
 }
 
-.imagen-box {
+.paginaFormulario .imagen-box {
   position: relative;
   width: 100%;
   overflow: hidden;
@@ -197,14 +193,14 @@ button {
   box-shadow: 0 0 25px rgba(255, 255, 255, 0.3);
 }
 
-.imagen-box img {
+.paginaFormulario .imagen-box img {
   display: block;
   width: 100%;
   height: auto;
   object-fit: contain;
 }
 
-.imagen-glow {
+.paginaFormulario .imagen-glow {
   position: absolute;
   inset: 0;
   border: 2px solid rgba(255, 255, 255, 0.5);
@@ -216,30 +212,27 @@ button {
 /* ===== TABLETS Y ESCRITORIO ===== */
 
 @media (min-width: 850px) {
-  body {
+  .paginaFormulario {
     padding: 40px 20px;
   }
 
-  .contenedordest {
+  .paginaFormulario .contenedordest {
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 35px;
     padding: 30px;
   }
 
-  .form-box {
+  .paginaFormulario .form-box {
     padding: 30px;
   }
 
-  .imagen-section {
+  .paginaFormulario .imagen-section {
     display: block;
   }
 
-  h1 {
+  .paginaFormulario h1 {
     font-size: 28px;
     letter-spacing: 3px;
   }
 }
-
-
-

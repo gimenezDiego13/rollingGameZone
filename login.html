@@ -1,66 +1,61 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login - Rolling Game Zone</title>
-  <link rel="stylesheet" href="./css/styles.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Rolling Game Zone</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
 
-<body>
+  <body>
+    <main class="paginaLogin">
+      <div class="contenedordest">
+        <!-- Formulario de inicio de sesión -->
+        <section class="container">
+          <h1>Iniciar sesión</h1>
 
-  <main class="contenedordest">
+          <div class="form-box">
+            <h2>Inicio de sesión</h2>
 
-    <!-- Formulario de inicio de sesión -->
-    <section class="container">
-      <h1>Iniciar sesión</h1>
+            <form>
+              <div class="campo">
+                <label for="usuario">Correo electrónico</label>
+                <input
+                  type="email"
+                  id="usuario"
+                  name="usuario"
+                  autocomplete="email"
+                  required
+                />
+              </div>
 
-      <div class="form-box">
-        <h2>Inicio de sesión</h2>
+              <div class="campo">
+                <label for="contrasena">Contraseña</label>
+                <input
+                  type="password"
+                  id="contrasena"
+                  name="contrasena"
+                  autocomplete="current-password"
+                  required
+                />
+              </div>
 
-        <form>
-          <div class="campo">
-            <label for="usuario">Correo electrónico</label>
-            <input
-              type="email"
-              id="usuario"
-              name="usuario"
-              autocomplete="email"
-              required
-            >
+              <button type="submit" class="btn-ingresar">Ingresar</button>
+            </form>
           </div>
+        </section>
 
-          <div class="campo">
-            <label for="contrasena">Contraseña</label>
-            <input
-              type="password"
-              id="contrasena"
-              name="contrasena"
-              autocomplete="current-password"
-              required
-            >
+        <!-- Imagen del gabinete -->
+        <aside class="imagen-section">
+          <div class="imagen-box">
+            <img
+              src="./assets/gabinete-5x45.jpeg"
+              alt="Gabinete gaming de Rolling Game Zone"
+            />
+            <div class="imagen-glow"></div>
           </div>
-
-          <button type="submit" class="btn-ingresar">
-            Ingresar
-          </button>
-        </form>
+        </aside>
       </div>
-    </section>
-
-    <!-- Imagen del gabinete -->
-    <aside class="imagen-section">
-      <div class="imagen-box">
-        <img
-          src="gabinete-6x6.jpeg"
-          alt="Gabinete gaming de Rolling Game Zone"
-        >
-        <div class="imagen-glow"></div>
-      </div>
-    </aside>
-
-  </main>
-
-</body>
+    </main>
+  </body>
 </html>
