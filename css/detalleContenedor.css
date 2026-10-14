@@ -1,0 +1,29 @@
+.contenedorMaestro {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.contenedorDeDetalle {
+  width: 100%;
+  max-width: 1200px;
+  min-height: 600px;
+  height: auto;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 40px;
+  border: 4px solid #aaa;
+  border-radius: 20px;
+  margin: 50px auto;
+  transition: all 1s ease;
+}
+
+.contenedorDeDetalle:hover {
+  border: 4px solid var(--colorBordoMásClaro);
+}
+
+
