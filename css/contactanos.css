@@ -1,0 +1,52 @@
+/* BOTON ENVIAR */
+.btn-enviar {
+  background-color: #ff0000;
+  color: white;
+  border: none;
+}
+
+.btn-enviar:hover {
+  background-color: #5c0000;
+}
+
+/* CARDS */
+.card-contacto {
+    background-color: #f5f3e9;
+}
+
+.card-formulario {
+    background-color: #f5f3e9;
+}
+
+.card-ubicacion {
+    background-color: #f5f3e9;
+}
+
+/* REDES SOCIALES */
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.redes-sociales a {
+    color: #ff0000;
+    font-size: 2.5rem;
+    text-decoration: none;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.redes-sociales a:hover {
+    color: #5c0000;
+    transform: scale(1.15);
+}
+/* Títulos */
+.card-contacto h1,
+.card-formulario h2,
+.card-ubicacion h2 {
+    color: #af2525;
+}
+.card-contacto h2{
+    color: #ff0000;
+}
