@@ -85,3 +85,125 @@
   transform: scale(1.2);
 }
 
+.detalleContenedor2 {
+  width: 100%;
+  max-width: 450px;
+  min-width: 0;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 22px;
+  flex-shrink: 1;
+}
+
+.titulo {
+  margin: 0;
+  color: #111;
+  font-size: 32px;
+  text-align: left;
+}
+
+.btnMasVendido {
+  margin: 0;
+  padding: 12px 18px;
+  color: #ffffff;
+  background-color: #800000;
+  border: 1px solid #ff0000;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.informacionProducto {
+  margin: 0;
+  color: #111;
+
+  font-size: 18px;
+  line-height: 1.7;
+  text-align: left;
+}
+
+.precio {
+  margin: 0;
+  padding: 16px 24px;
+  color: #ffffff;
+  background-color: #800000;
+  border-radius: 12px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.contenedorEstrellas {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.estrellas {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.imgEstrellas {
+  display: block;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.valoracion {
+  margin: 0;
+  color: #000000;
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.botonesDetallados {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 15px;
+  margin-top: 5px;
+}
+
+.btn1,
+.btn2 {
+  width: 100%;
+  padding: 17px 20px;
+
+  color: #ffffff;
+  background-color: #800000;
+
+  border: 1px solid #ff0000;
+  border-radius: 12px;
+
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.btn1 {
+  background-color: #bb0000;
+}
+
+.btn1:hover,
+.btn2:hover {
+  background-color: #ff0000;
+  transform: translateY(-2px);
+}
+
+.btn1:focus-visible,
+.btn2:focus-visible,
+.miniImgProductoDetallado:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 3px;
+}
+
