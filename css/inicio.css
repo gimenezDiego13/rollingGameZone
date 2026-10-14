@@ -462,3 +462,8 @@
     padding: 2.25rem 1.25rem;
   }
 }
+
+.link-rojo {
+  color: var(--colorRojoVivo);
+  text-decoration: none;
+}
