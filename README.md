@@ -86,4 +86,4 @@ Proyecto en desarrollo con enfoque en la creación de una landing/store de hardw
 
 ## Agradecimientos
 
-Gracias a todo el equipo por el trabajo colaborativo en el desarrollo del proyecto, así como al uso de herramientas como GitHub, Git y Trello para la organización y gestión del trabajo.
+Gracias al SCRUM MASTER por su dedicacion y paciencia para con el equipo y a los profesores que estan viendo esto. Espero Disfruten saludos!
