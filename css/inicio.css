@@ -117,3 +117,68 @@
     transform: translateX(-50%);
   }
 }
+
+/* RAMITA ESTUVO AQUI */
+/* Contenedor general: una columna en mobile */
+.inicioRGZ {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.tituloSeccion {
+  color: #111111;
+}
+
+/* ---------- MOBILE ---------- */
+.destacadosRGZ {
+  display: none;
+  border: 1px solid #444;
+  border-radius: 0.75rem;
+  padding: 1rem;
+}
+
+.cardsRGZ {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.cardsRGZ img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.carouselsRGZ {
+  display: none;
+}
+
+/* ---------- ESCRITORIO (desde 992px) ---------- */
+@media (min-width: 992px) {
+  .inicioRGZ {
+    grid-template-columns: 1fr 3fr;
+    align-items: start;
+  }
+  .destacadosRGZ {
+    display: block;
+  }
+  .cardsRGZ {
+    display: none;
+  }
+  .carouselsRGZ {
+    display: block;
+  }
+}
+
+/* Carousels */
+.carouselRGZ {
+  margin-bottom: 2rem;
+}
+
+.encabezadoCarousel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
