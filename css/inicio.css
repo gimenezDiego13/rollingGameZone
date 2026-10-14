@@ -149,70 +149,92 @@
 
 
 /* RAMITA ESTUVO AQUI */
-/* Contenedor general: una columna en mobile */
+
+/* CONTENEDOR GENERAL */
 .inicioRGZ {
   display: grid;
+  grid-template-columns: 1fr;
   gap: 1rem;
   padding: 1rem;
+  padding-bottom: 6rem;
 }
 
+/* TITULOS */
 .tituloSeccion {
-  color: #111111;
-}
-
-/* ---------- MOBILE ---------- */
-.destacadosRGZ {
-  display: none;
-  border: 1px solid #444;
-  border-radius: 0.75rem;
-  padding: 1rem;
-}
-
-.cardsRGZ {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
-}
-
-.cardsRGZ img {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-}
-
-.carouselsRGZ {
-  display: none;
-}
-
-/* ---------- ESCRITORIOS ---------- */
-@media (min-width: 992px) {
-  .inicioRGZ {
-    grid-template-columns: 1fr 3fr;
-    
-  }
-  .destacadosRGZ {
-  display: none; /* oculta en mobile */
-  background-color: var(--backgroundColor);
-  border: 1px solid var(--colorBordoMásClaro);
-  border-radius: 1.25rem;
-  padding: 1rem;
+  color: var(--fontsColor);
 }
 
 .tituloDestacados {
   color: var(--fontsColor);
   margin-bottom: 1rem;
 }
+
+/* PRODUCTOS DESTACADOS */
+.destacadosRGZ {
+  display: none;
+}
+
+/* TARJETAS MOBILE */
+.cardsRGZ {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.cardsRGZ img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+}
+
+/* CARRUSELES OCULTOS EN MOBILE */
+.carouselsRGZ {
+  display: none;
+}
+
+/* ESCRITORIO: DESDE 992 PX */
+@media (min-width: 992px) {
+  .inicioRGZ {
+    grid-template-columns: minmax(220px, 1fr) minmax(0, 3fr);
+    align-items: start;
+    padding-bottom: 1rem;
+  }
+
+  /* COLUMNA DE PRODUCTOS DESTACADOS */
+  .destacadosRGZ {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: sticky;
+    top: 1rem;
+    align-self: start;
+    max-height: calc(100vh - 2rem);
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--colorBordoMásClaro) transparent;
+    background-color: var(--backgroundColor);
+    border: 1px solid var(--colorBordoMásClaro);
+    border-radius: 1.25rem;
+    padding: 1rem;
+  }
+
+  /* OCULTAR TARJETAS MOBILE */
   .cardsRGZ {
     display: none;
   }
+
+  /* MOSTRAR CARRUSELES DESKTOP */
   .carouselsRGZ {
-    display: block;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
   }
 }
 
-/* Carousels */
+/* ESTILOS DE LOS CARRUSELES */
 .carouselRGZ {
-  margin-bottom: 2rem;
+  min-width: 0;
+  margin-bottom: 1rem;
 }
 
 .encabezadoCarousel {
@@ -248,8 +270,9 @@
   border-color: var(--colorRojoVivo);
 }
 
-/* ----- correciones de imagenes ----- */
+/* IMAGENES DE LOS CARRUSELES */
 .carouselRGZ .carousel-item img {
+  display: block;
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: contain;
@@ -263,22 +286,6 @@
 .carouselRGZ .carousel-item img:hover {
   border-color: var(--colorRojoVivo);
 }
-
-@media (min-width: 992px) {
-  .destacadosRGZ {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    position: sticky;
-    top: 1rem;
-    align-self: start;
-    max-height: calc(100vh - 2rem);
-    overflow-y: auto;
-    scrollbar-width: thin;
-  scrollbar-color: var(--colorBordoMásClaro) transparent;
-  }
-}
-
 /* ----- cards izquierda ----- */
 .miniCard {
   display: flex;
@@ -326,4 +333,132 @@
 .botonCarrito:hover {
   background-color: var(--colorRojoVivo);
   color: var(--backgroundColor);
+}
+
+/* Contenido interno de las cards */
+.miniCardInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Enlace "Ver todas" con el mismo look que los botones */
+.enlaceVerTodo {
+  display: block;
+  padding: 0.35rem 0.5rem;
+  border: 1px solid var(--colorBordoMásClaro);
+  border-radius: 0.5rem;
+  color: var(--fontsColor);
+  font-size: 0.875rem;
+  text-align: center;
+  text-decoration: none;
+  transition: border-color 0.3s ease;
+}
+
+.enlaceVerTodo:hover {
+  border-color: var(--colorRojoVivo);
+}
+
+/* Mobile: espacio abajo para que el menú fijo no tape las últimas cards */
+.inicioRGZ {
+  padding-bottom: 6rem;
+}
+
+@media (min-width: 992px) {
+  .inicioRGZ {
+    padding-bottom: 1rem;
+  }
+}
+
+.mainRolling {
+  background-color: var(--backgroundColor);
+}
+
+/* BENEFICIOS ROLLIN' */
+/* ----- Franja de beneficios ----- */
+.beneficiosRGZ {
+  padding: 2rem 1rem 6rem; /* abajo: espacio para el menú fijo en mobile */
+  border-top: 1px solid var(--colorBordoMásClaro);
+}
+
+.tituloBeneficios {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--fontsColor);
+}
+
+.beneficiosGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr)); /* mobile: 2x2 */
+  gap: 1rem;
+}
+
+.beneficio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  min-height: 15rem;
+  padding: 1.75rem 1rem;
+  text-align: center;
+  border: 1px solid var(--colorBordoMásClaro);
+  border-radius: 1.25rem;
+  background-color: rgba(255, 255, 255, 0.03);
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.beneficio:hover {
+  border-color: var(--colorRojoVivo);
+  transform: translateY(-4px);
+}
+
+.circuloIcono {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4.5rem;
+  height: 4.5rem;
+  border: 1px solid var(--colorRojoVivo);
+  border-radius: 50%;
+}
+
+.iconoBeneficio {
+  font-size: 2rem;
+  color: var(--colorRojoVivo);
+}
+
+.beneficioTitulo {
+  margin: 0;
+  font-size: 1.1rem;
+  color: var(--fontsColor);
+}
+
+.beneficioTexto {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--fontsColor);
+  opacity: 0.8;
+}
+
+/* Escritorio: 4 en una fila */
+@media (min-width: 992px) {
+  .beneficiosRGZ {
+    padding: 3rem 2rem;
+  }
+
+  .tituloBeneficios {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .beneficiosGrid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1.5rem;
+  }
+
+  .beneficio {
+    min-height: 18rem;
+    padding: 2.25rem 1.25rem;
+  }
 }

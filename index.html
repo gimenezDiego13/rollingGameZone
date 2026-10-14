@@ -62,7 +62,7 @@
             </ul>
 
             <div class="iconosContainer">
-              <a href="#" aria-label="Carrito de compras">
+              <a href="./carrito.html" aria-label="Carrito de compras">
                 <i class="fa-solid fa-cart-shopping iconosRolling"></i>
               </a>
               <a href="#" aria-label="Mi cuenta">
@@ -75,7 +75,7 @@
       
     </nav>
   </header>
-  <main>
+  <main class="mainRolling">
 
     <div id="carouselExampleDark" class="carousel carousel-overlay slide" data-bs-theme="dark">
         <div class="carousel-inner">
@@ -166,7 +166,7 @@
     <div class="miniCardInfo">
       <h3 class="miniCardNombre">RTX 3080 Palit Gaming Pro 10g</h3>
       <p class="miniCardPrecio">$700.000</p>
-      <button class="btn btn-sm botonCarrito" type="button">Agregar al carrito</button>
+      <a href="./carrito.html" class="btn btn-sm botonCarrito">Agregar al carrito</a>
     </div>
   </article>
 
@@ -175,7 +175,7 @@
     <div class="miniCardInfo">
       <h3 class="miniCardNombre">Mother Asrock B650M PG RIPTIDE WIFI AM5 DDR5 </h3>
       <p class="miniCardPrecio">$253.000</p>
-      <button class="btn btn-sm botonCarrito" type="button">Agregar al carrito</button>
+      <a href="./carrito.html" class="btn btn-sm botonCarrito">Agregar al carrito</a>
     </div>
   </article>
 
@@ -184,54 +184,58 @@
     <div class="miniCardInfo">
       <h3 class="miniCardNombre">Disco Solido SSD M.2 ADATA 4TB XPG MARS 980 PRO AIR 14000MBs NVMe PCIe Gen5 x4 Heatsink Cooler</h3>
       <p class="miniCardPrecio">$1.500.000</p>
-      <button class="btn btn-sm botonCarrito" type="button">Agregar al carrito</button>
+      <a href="./carrito.html" class="btn btn-sm botonCarrito">Agregar al carrito</a>
     </div>
   </article>
 </aside>
 
   <section>
 
-    <!-- ========== MOBILE: 4 cards ========== -->
+    <!-- ========== Version mobile card ========== -->
     <div class="cardsRGZ">
-      <div class="card">
-        <img src="./assets/pcArmadas.png" class="card-img-top" alt="PC armadas" />
-        <div class="card-body">
-          <h3 class="card-title h5">PC Armadas</h3>
-          <a href="#" class="btn btn-primary btn-sm">Ver todas</a>
-          <button class="btn btn-sm">Agregar al carrito</button>
-        </div>
-      </div>
-      <div class="card">
-        <img src="./assets/perifericos.png" class="card-img-top" alt="Periféricos" />
-        <div class="card-body">
-          <h3 class="card-title h5">Periféricos</h3>
-          <a href="#" class="btn btn-primary btn-sm">Ver todos</a>
-          <button class="btn btn-sm">Agregar al carrito</button>
-        </div>
-      </div>
-      <div class="card">
-        <img src="./assets/componentes.png" class="card-img-top" alt="Componentes" />
-        <div class="card-body">
-          <h3 class="card-title h5">Componentes</h3>
-          <a href="#" class="btn btn-primary btn-sm">Ver todos</a>
-          <button class="btn btn-sm">Agregar al carrito</button>
-        </div>
-      </div>
-      <div class="card">
-        <img src="./assets/ofertas.png" class="card-img-top" alt="Ofertas" />
-        <div class="card-body">
-          <h3 class="card-title h5">Ofertas</h3>
-          <a href="#" class="btn btn-primary btn-sm">Ver todas</a>
-          <button class="btn btn-sm">Agregar al carrito</button>
-        </div>
-      </div>
+  
+      <article class="miniCard">
+    <img src="./assets/periferico 1.png" alt="Periféricos" />
+    <div class="miniCardInfo">
+      <h3 class="miniCardNombre">Periféricos</h3>
+      <a href="./detalleProducto.html" class="enlaceVerTodo">Ver todos</a>
+      <a href="./carrito.html" class="btn btn-sm botonCarrito">Agregar al carrito</a>
     </div>
+  </article>
 
+  <article class="miniCard">
+    <img src="./assets/componente 1.png" alt="Componentes" />
+    <div class="miniCardInfo">
+      <h3 class="miniCardNombre">Componentes</h3>
+      <a href="./detalleProducto.html" class="enlaceVerTodo">Ver todos</a>
+      <a href="./carrito.html" class="btn btn-sm botonCarrito">Agregar al carrito</a>
+    </div>
+  </article>
+
+  <article class="miniCard">
+    <img src="./assets/pc armada 1.png" alt="PC armadas" />
+    <div class="miniCardInfo">
+      <h3 class="miniCardNombre">PC Armadas</h3>
+      <a href="./detalleProducto.html" class="enlaceVerTodo">Ver todas</a>
+      <a href="./carrito.html" class="btn btn-sm botonCarrito">Agregar al carrito</a>
+    </div>
+  </article>
+
+  <article class="miniCard">
+    <img src="./assets/oferta 1.png" alt="Ofertas" />
+    <div class="miniCardInfo">
+      <h3 class="miniCardNombre">Ofertas</h3>
+      <a href="./detalleProducto.html" class="enlaceVerTodo">Ver todas</a>
+      <a href="./carrito.html" class="btn btn-sm botonCarrito">Agregar al carrito</a>
+    </div>
+  </article>
+
+</div>
     <!-- ========== ESCRITORIO: 4 carousels de 3 ítems ========== -->
     <div class="carouselsRGZ">
 
       <!-- PC ARMADAS -->
-      <div id="carouselPC" class="carousel slide carouselRGZ" data-bs-ends="stop" style="--bs-carousel-items: 3; --bs-carousel-items-gap: 1rem;">
+      <div id="carouselPC" class="carousel slide carouselRGZ" data-bs-ends="stop" style="--bs-carousel-items: 2; --bs-carousel-items-gap: 1rem;">
         <div class="encabezadoCarousel">
           <h5 class="mb-0 tituloSeccion">PC Armadas</h5>
           <div>
@@ -255,7 +259,7 @@
       </div>
 
       <!-- PERIFÉRICOS -->
-      <div id="carouselPerifericos" class="carousel slide carouselRGZ" data-bs-ends="stop" style="--bs-carousel-items: 3; --bs-carousel-items-gap: 1rem;">
+      <div id="carouselPerifericos" class="carousel slide carouselRGZ" data-bs-ends="stop" style="--bs-carousel-items: 2; --bs-carousel-items-gap: 1rem;">
         <div class="encabezadoCarousel">
           <h5 class="mb-0 tituloSeccion">Periféricos</h5>
           <div>
@@ -270,16 +274,16 @@
           </div>
         </div>
         <div class="carousel-inner">
-          <div class="carousel-item active"><img src="./assets/periferico 1.JPG" class="d-block w-100 rounded-5" alt="Periférico 1" /></div>
-          <div class="carousel-item"><img src="./assets/periferico 2.JPG" class="d-block w-100 rounded-5" alt="Periférico 2" /></div>
-          <div class="carousel-item"><img src="./assets/periferico 3.JPG" class="d-block w-100 rounded-5" alt="Periférico 3" /></div>
-          <div class="carousel-item"><img src="./assets/periferico 4.JPG" class="d-block w-100 rounded-5" alt="Periférico 4" /></div>
-          <div class="carousel-item"><img src="./assets/periferico 5.JPG" class="d-block w-100 rounded-5" alt="Periférico 5" /></div>
+          <div class="carousel-item active"><img src="./assets/periferico 1.png" class="d-block w-100 rounded-5" alt="Periférico 1" /></div>
+          <div class="carousel-item"><img src="./assets/periferico 2.png" class="d-block w-100 rounded-5" alt="Periférico 2" /></div>
+          <div class="carousel-item"><img src="./assets/periferico 3.png" class="d-block w-100 rounded-5" alt="Periférico 3" /></div>
+          <div class="carousel-item"><img src="./assets/periferico 4.png" class="d-block w-100 rounded-5" alt="Periférico 4" /></div>
+          <div class="carousel-item"><img src="./assets/periferico 5.png" class="d-block w-100 rounded-5" alt="Periférico 5" /></div>
         </div>
       </div>
 
       <!-- COMPONENTES -->
-      <div id="carouselComponentes" class="carousel slide carouselRGZ" data-bs-ends="stop" style="--bs-carousel-items: 3; --bs-carousel-items-gap: 1rem;">
+      <div id="carouselComponentes" class="carousel slide carouselRGZ" data-bs-ends="stop" style="--bs-carousel-items: 2; --bs-carousel-items-gap: 1rem;">
         <div class="encabezadoCarousel">
           <h5 class="mb-0 tituloSeccion">Componentes</h5>
           <div>
@@ -294,16 +298,16 @@
           </div>
         </div>
         <div class="carousel-inner">
-          <div class="carousel-item active"><img src="./assets/componente 1.JPG" class="d-block w-100 rounded-5" alt="Componente 1" /></div>
-          <div class="carousel-item"><img src="./assets/componente 2.JPG" class="d-block w-100 rounded-5" alt="Componente 2" /></div>
-          <div class="carousel-item"><img src="./assets/componente 3.JPG" class="d-block w-100 rounded-5" alt="Componente 3" /></div>
-          <div class="carousel-item"><img src="./assets/componente 4.JPG" class="d-block w-100 rounded-5" alt="Componente 4" /></div>
-          <div class="carousel-item"><img src="./assets/componente 5.JPG" class="d-block w-100 rounded-5" alt="Componente 5" /></div>
+          <div class="carousel-item active"><img src="./assets/componente 1.png" class="d-block w-100 rounded-5" alt="Componente 1" /></div>
+          <div class="carousel-item"><img src="./assets/componente 2.png" class="d-block w-100 rounded-5" alt="Componente 2" /></div>
+          <div class="carousel-item"><img src="./assets/componente 3.png" class="d-block w-100 rounded-5" alt="Componente 3" /></div>
+          <div class="carousel-item"><img src="./assets/componente 4.png" class="d-block w-100 rounded-5" alt="Componente 4" /></div>
+          <div class="carousel-item"><img src="./assets/componente 5.png" class="d-block w-100 rounded-5" alt="Componente 5" /></div>
         </div>
       </div>
 
       <!-- OFERTAS -->
-      <div id="carouselOfertas" class="carousel slide carouselRGZ" data-bs-ends="stop" style="--bs-carousel-items: 3; --bs-carousel-items-gap: 1rem;">
+      <div id="carouselOfertas" class="carousel slide carouselRGZ" data-bs-ends="stop" style="--bs-carousel-items: 2; --bs-carousel-items-gap: 1rem;">
         <div class="encabezadoCarousel">
           <h5 class="mb-0 tituloSeccion">Ofertas</h5>
           <div>
@@ -318,17 +322,52 @@
           </div>
         </div>
         <div class="carousel-inner">
-          <div class="carousel-item active"><img src="./assets/oferta 1.JPG" class="d-block w-100 rounded-5" alt="Oferta 1" /></div>
-          <div class="carousel-item"><img src="./assets/oferta 2.JPG" class="d-block w-100 rounded-5" alt="Oferta 2" /></div>
-          <div class="carousel-item"><img src="./assets/oferta 3.JPG" class="d-block w-100 rounded-5" alt="Oferta 3" /></div>
-          <div class="carousel-item"><img src="./assets/oferta 4.JPG" class="d-block w-100 rounded-5" alt="Oferta 4" /></div>
-          <div class="carousel-item"><img src="./assets/oferta 5.JPG" class="d-block w-100 rounded-5" alt="Oferta 5" /></div>
+          <div class="carousel-item active"><img src="./assets/oferta 1.png" class="d-block w-100 rounded-5" alt="Oferta 1" /></div>
+          <div class="carousel-item"><img src="./assets/oferta 2.png" class="d-block w-100 rounded-5" alt="Oferta 2" /></div>
+          <div class="carousel-item"><img src="./assets/oferta 3.png" class="d-block w-100 rounded-5" alt="Oferta 3" /></div>
+          <div class="carousel-item"><img src="./assets/oferta 4.png" class="d-block w-100 rounded-5" alt="Oferta 4" /></div>
+          <div class="carousel-item"><img src="./assets/oferta 5.png" class="d-block w-100 rounded-5" alt="Oferta 5" /></div>
         </div>
       </div>
 
     </div>
   </section>
 </div>
+
+<!-- ROLLING EXTRAS INFORMACION -->
+ 
+<section class="beneficiosRGZ" aria-labelledby="tituloBeneficios">
+
+  <h2 id="tituloBeneficios" class="tituloBeneficios">¿Por qué elegir Rolling Game Zone?</h2>
+
+  <div class="beneficiosGrid">
+
+    <article class="beneficio">
+      <span class="circuloIcono"><i class="fa-solid fa-truck-fast iconoBeneficio" aria-hidden="true"></i></span>
+      <h3 class="beneficioTitulo">Envíos a todo el país</h3>
+      <p class="beneficioTexto">Recibí tu compra donde estés, bien embalada y con seguimiento.</p>
+    </article>
+
+    <article class="beneficio">
+      <span class="circuloIcono"><i class="fa-solid fa-credit-card iconoBeneficio" aria-hidden="true"></i></span>
+      <h3 class="beneficioTitulo">Cuotas sin interés</h3>
+      <p class="beneficioTexto">Pagá en cuotas con tarjetas seleccionadas.</p>
+    </article>
+
+    <article class="beneficio">
+      <span class="circuloIcono"><i class="fa-solid fa-shield-halved iconoBeneficio" aria-hidden="true"></i></span>
+      <h3 class="beneficioTitulo">Garantía asegurada</h3>
+      <p class="beneficioTexto">Todos nuestros productos cuentan con garantía oficial.</p>
+    </article>
+
+    <article class="beneficio">
+      <span class="circuloIcono"><i class="fa-solid fa-headset iconoBeneficio" aria-hidden="true"></i></span>
+      <h3 class="beneficioTitulo">Asesoramiento</h3>
+      <p class="beneficioTexto">Te ayudamos a elegir y armar la PC ideal para vos.</p>
+    </article>
+
+  </div>
+</section>
   </main>
   <footer></footer>
   <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
