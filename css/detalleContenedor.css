@@ -60,3 +60,28 @@
 .miniImgProductoDetallado:hover {
   transform: scale(1.3);
 }
+
+.detalleContenedor {
+  flex: 1;
+  min-width: 0;
+  max-width: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.productoDetalladoImg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  max-height: 450px;
+  object-fit: contain;
+  border-radius: 10px;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.productoDetalladoImg:hover {
+  transform: scale(1.2);
+}
+
